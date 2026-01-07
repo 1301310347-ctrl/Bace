@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 2px solid #00d4ff;
+    margin-bottom: 40px;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    color: #00d4ff;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #cccccc;
+    font-style: italic;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+/* Sports Grid */
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.sport-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.sport-card:hover {
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+}
+
+.sport-card.basketball:hover {
+    border-color: #ff6b35;
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+}
+
+.sport-card.soccer:hover {
+    border-color: #28a745;
+    box-shadow: 0 20px 40px rgba(40, 167, 69, 0.2);
+}
+
+.sport-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.sport-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.sport-card p {
+    color: #cccccc;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.sport-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    color: #00d4ff;
+}
+
+.play-btn {
+    background: linear-gradient(135deg, #00d4ff, #0099cc);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.play-btn:hover {
+    background: linear-gradient(135deg, #0099cc, #007399);
+    transform: translateY(-2px);
+}
+
+.basketball .play-btn {
+    background: linear-gradient(135deg, #ff6b35, #e55a2b);
+}
+
+.basketball .play-btn:hover {
+    background: linear-gradient(135deg, #e55a2b, #cc4e24);
+}
+
+.soccer .play-btn {
+    background: linear-gradient(135deg, #28a745, #20873a);
+}
+
+.soccer .play-btn:hover {
+    background: linear-gradient(135deg, #20873a, #1e7e34);
+}
+
+/* Difficulty Section */
+.difficulty-section {
+    text-align: center;
+}
+
+.difficulty-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.difficulty-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.difficulty-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.difficulty-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.difficulty-btn.selected {
+    border-color: #00d4ff;
+    background: rgba(0, 212, 255, 0.1);
+}
+
+.difficulty-icon {
+    font-size: 2rem;
+}
+
+.difficulty-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.difficulty-desc {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+/* Updated Selection States */
+.difficulty-btn.selected {
+    border-color: #00d4ff;
+    background: rgba(0, 212, 255, 0.2);
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 212, 255, 0.3);
+}
+
+.difficulty-btn.easy.selected {
+    border-color: #28a745;
+    background: rgba(40, 167, 69, 0.2);
+    box-shadow: 0 15px 30px rgba(40, 167, 69, 0.3);
+}
+
+.difficulty-btn.hard.selected {
+    border-color: #dc3545;
+    background: rgba(220, 53, 69, 0.2);
+    box-shadow: 0 15px 30px rgba(220, 53, 69, 0.3);
+}
+
+/* Non-selected buttons become dimmed when one is selected */
+.difficulty-options:has(.difficulty-btn.selected) .difficulty-btn:not(.selected) {
+    opacity: 0.4;
+    transform: scale(0.95);
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .sports-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .difficulty-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .sport-stats {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Answer States - Visual Feedback */
+.answer-option.correct {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border-color: #28a745;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+    animation: correctPulse 0.6s ease;
+}
+
+.answer-option.incorrect {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    border-color: #dc3545;
+    opacity: 0.7;
+    animation: incorrectShake 0.5s ease;
+}
+
+.answer-option.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Animations for answer feedback */
+@keyframes correctPulse {
+    0% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.05) translateY(-4px); }
+    100% { transform: scale(1) translateY(-2px); }
+}
+
+@keyframes incorrectShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Points Animation */
+.stat-value.points-increase {
+    animation: pointsGlow 1s ease;
+}
+
+@keyframes pointsGlow {
+    0% { 
+        transform: scale(1);
+        color: #ff6b35;
+    }
+    50% { 
+        transform: scale(1.2);
+        color: #00d4ff;
+        text-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+    }
+    100% { 
+        transform: scale(1);
+        color: #ff6b35;
+    }
+}
+
+/* Show achievement popup */
+.achievement-popup.show {
+    display: block;
+}
