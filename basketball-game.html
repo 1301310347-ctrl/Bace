@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaseSport - Basketball Quiz</title>
+    <link rel="stylesheet" href="basketball-game.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header with Score -->
+        <header class="header">
+            <div class="score-display">
+                <span class="score-label">Score</span>
+                <span class="score-value">150</span>
+            </div>
+            <div class="logo">
+                <h1>BaseSport</h1>
+                <span class="sport-type">Basketball Quiz</span>
+            </div>
+            <div class="placeholder"></div>
+        </header>
+
+        <!-- Game Area -->
+        <main class="game-area">
+            <!-- Player Image Section -->
+            <div class="player-section">
+                <div class="player-image">
+                    <img src="https://via.placeholder.com/300x400/1a1a2e/ffffff?text=Player+Image" alt="Basketball Player" />
+                </div>
+                <h2 class="question-text">Who is this basketball player?</h2>
+            </div>
+
+            <!-- Answer Options -->
+            <div class="answers-section">
+                <div class="answers-grid">
+                    <button class="answer-option" data-answer="A">
+                        <span class="option-letter">A</span>
+                        <span class="option-text">LeBron James</span>
+                    </button>
+                    <button class="answer-option" data-answer="B">
+                        <span class="option-letter">B</span>
+                        <span class="option-text">Stephen Curry</span>
+                    </button>
+                    <button class="answer-option" data-answer="C">
+                        <span class="option-letter">C</span>
+                        <span class="option-text">Kevin Durant</span>
+                    </button>
+                    <button class="answer-option" data-answer="D">
+                        <span class="option-letter">D</span>
+                        <span class="option-text">Giannis Antetokounmpo</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Quit Button -->
+        <div class="quit-section">
+            <a href="index.html" class="quit-btn">Quit Game</a>
+        </div>
+    </div>
+</body>
+</html>
