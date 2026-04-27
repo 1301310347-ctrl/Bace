@@ -1,3 +1,5 @@
+console.log("Script started");
+
 function main() {
     showAlert();
 
@@ -8,3 +10,4 @@ function showAlert() {
 }
 
 main();
+
