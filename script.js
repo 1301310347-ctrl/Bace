@@ -1,13 +1,10 @@
 console.log("Script started");
 
 function main() {
-    showAlert();
+    console.log("Main function called"):
 
 }
 
-function showAlert() {
-    alert("This is not awesome, I can now show an alert");
-}
 
-main();
+
 
