@@ -98,10 +98,25 @@ function moveToNextQuestion() {
     if (currentQuestion < 10) {
         displayQuestion();
     } else {
-        alert("Quiz complete! Final score: " + score + " out of 100!");
+        // Save best score
+        saveBestScore(score);
+        
+        // Different messages based on score
+        if (score < 20) {
+            alert("You suck! Final score: " + score + " out of 100. Try again!");
+        } else if (score < 50) {
+            alert("Not bad! Final score: " + score + " out of 100. You can do better!");
+        } else if (score < 80) {
+            alert("Good job! Final score: " + score + " out of 100!");
+        } else {
+            alert("Excellent! Final score: " + score + " out of 100! You're a basketball expert!");
+        }
+        
         window.location.href = "index.html";
     }
 }
+
+
 
 // Save best score function
 function saveBestScore(currentScore) {
