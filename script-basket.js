@@ -16,8 +16,8 @@ let imageSources = [
     "https://ichef.bbci.co.uk/ace/standard/1200/cpsprodpb/3463/live/e3c0c5b0-66b5-11ef-9039-c9d3be0865dd.png",
     "https://cdn.nba.com/manage/2024/06/Jayson_Tatum_on_winning_long_coveted_championship_This_is_an_incredible_feeling_2024_06_18T03_06_16.jpg",
     "https://imagenes.elpais.com/resizer/v2/FA4J4OMEWNFNND6NN3KPEFGODU.jpeg?auth=60a1d24ece26f495fc2d4cf39d20d214f31ec92994e84d8f14e95b0abae77a99&width=414",
-    "https://example.com/lebron.jpg",
-    "https://example.com/nba-logo.jpg",
+    "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254",
+    "https://brandlogos.net/wp-content/uploads/2025/04/nba-logo_brandlogos.net_ipeky.png",
     "https://example.com/clock.jpg",
     "https://media.tenor.com/SEjyC2tLN4MAAAAM/out-bye.gif",
     "https://example.com/hoop.jpg",
@@ -105,11 +105,11 @@ function moveToNextQuestion() {
         if (score < 20) {
             alert("You suck! Final score: " + score + " out of 100. Try again!");
         } else if (score < 50) {
-            alert("Not bad! Final score: " + score + " out of 100. You can do better!");
+            alert("Not bad! Final score: " + score + " out of 100. You definitely can do better!");
         } else if (score < 80) {
             alert("Good job! Final score: " + score + " out of 100!");
         } else {
-            alert("Excellent! Final score: " + score + " out of 100! You're a basketball expert!");
+            alert("Excellent! Final score: " + score + " out of 100! You have some ball knowledge kid");
         }
         
         window.location.href = "index.html";
