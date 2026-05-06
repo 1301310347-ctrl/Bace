@@ -5,7 +5,7 @@ let questions = [
     "What is this player's real name?",
     "Who holds the record for most career points in NBA?",
     "What does NBA stand for?",
-    "How many quarters are in a basketball game?",
+    "Is this a travel?",
     "Which player is known as 'The King'?",
     "Who is the player in the NBA logo?",
     "Which team has won the most NBA championships?",
@@ -18,11 +18,11 @@ let imageSources = [
     "https://imagenes.elpais.com/resizer/v2/FA4J4OMEWNFNND6NN3KPEFGODU.jpeg?auth=60a1d24ece26f495fc2d4cf39d20d214f31ec92994e84d8f14e95b0abae77a99&width=414",
     "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254",
     "https://brandlogos.net/wp-content/uploads/2025/04/nba-logo_brandlogos.net_ipeky.png",
-    "https://example.com/clock.jpg",
-    "https://media.tenor.com/SEjyC2tLN4MAAAAM/out-bye.gif",
-    "https://example.com/hoop.jpg",
-    "https://example.com/celtics.jpg",
-    "https://example.com/shotclock.jpg"
+    "https://media.tenor.com/oLDn2ewQCYUAAAAM/travel-basketball.gif",
+    "https://cdn.artphotolimited.com/images/67ceea65865e9b3b9ef7de2b/1000x1000/kobe-bryant-2001-nba-finals.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ5RlA8_aeuMCHoi886sqFc9JMovfYpju8Xw&s",
+    "https://library.sportingnews.com/styles/twitter_card_120x120/s3/2021-08/larry-obrien-championship-trophy_1ltn7uv1okfkvzsgq6wrcaowk.png?itok=95muDb-K",
+    "https://cdn.sanity.io/images/8dhz9iqq/production/70b31a1d6eb0b8d7a884112487cbd424c2336bff-1236x500.png"
 ];
 
 let answerOptions = [
@@ -31,7 +31,7 @@ let answerOptions = [
     ["Jerry South", "Jerry West", "Jerry East", "Jerry North"],
     ["Kareem Abdul-Jabbar", "LeBron James", "Kobe Bryant", "Michael Jordan"],
     ["National Basketball Association", "North Basketball Alliance", "New Basketball Arena", "National Ball Association"],
-    ["2", "3", "4", "5"],
+    ["nope", "nah", "Yes", "maybe"],
     ["Michael Jordan", "LeBron James", "Kobe Bryant", "Stephen Curry"],
     ["Magic Johnson", "Michael Jordan", "Jerry West", "Willis Reed"],
     ["Lakers", "Celtics", "Bulls", "Warriors"],
