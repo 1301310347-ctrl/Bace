@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    color: #ffffff;
+    background: rgb(46, 55, 22);
+    color: #3c00ff;
     min-height: 100vh;
 }
 
