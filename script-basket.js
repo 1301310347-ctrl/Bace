@@ -76,10 +76,13 @@ let score = 0;
 
 // Start the game when page loads
 function startGame() {
+
     displayQuestion();
+
     setupAnswerButtons();
+
     updateScoreDisplay();
-    checkAnswer();
+
 }
 
 // Display current question
