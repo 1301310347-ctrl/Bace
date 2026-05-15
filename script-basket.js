@@ -79,6 +79,7 @@ function startGame() {
     displayQuestion();
     setupAnswerButtons();
     updateScoreDisplay();
+    checkAnswer();
 }
 
 // Display current question
